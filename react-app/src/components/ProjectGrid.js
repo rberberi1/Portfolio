@@ -1,4 +1,6 @@
 import ProjectCard from "./ProjectCard";
+import {projects, filterButtons} from './data';
+import  FilterButton  from "./FilterButton";
 
 function ProjectGrid(){
   return(
@@ -6,11 +8,28 @@ function ProjectGrid(){
     <h2>My Projects</h2>
 
     <div class="filter-buttons">
-      <button data-category="all">All</button>
-      <button data-category="web">Web Development</button>
-      <button data-category="design">Design</button>
+      {filterButtons.map((btn)=> (
+        <FilterButton 
+        key={btn.name}
+        type={btn.type} 
+        name={btn.name}>
+        </FilterButton>
+      ))}
     </div>
-    <ProjectCard></ProjectCard>
+    <div class="projects-grid">
+    {projects.map((project) => (
+      <ProjectCard 
+      key={project.title}
+      title={project.title} 
+      category={project.category}
+      image={project.image.src} 
+      description= {project.description}
+      link= {project.link}
+      linkText={project.linkText}>
+        </ProjectCard>
+    ))}
+    </div>
+    
     </section>
   );
 }

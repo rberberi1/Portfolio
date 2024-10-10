@@ -1,4 +1,5 @@
-
+import { headerLabels } from "./data";
+import HeaderLabel from "./HeaderLabel";
 
 function Header(){
   return(
@@ -6,12 +7,11 @@ function Header(){
     <span><img width="48" height="48" src="https://img.icons8.com/color/48/laptop--v1.png" alt="laptop--v1"/></span>
     <nav class="nav">
       <ul id="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#events">My Events</a></li>
+        {headerLabels.map((label) => (
+          <HeaderLabel 
+          link={label.link} 
+          name={label.name}></HeaderLabel>
+        ))}
       </ul>
       <div class="hamburger" id="hamburger">
         <span class="bar"></span>
