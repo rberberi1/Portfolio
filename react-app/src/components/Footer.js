@@ -1,13 +1,17 @@
-function Footer(){
-  return(
+import React from 'react';
+
+function Footer() {
+  const currentYear = new Date().getFullYear(); 
+
+  return (
     <footer>
-    <div class="social-media">
+      <div className="social-media">
         <a href="#">Twitter</a>
         <a href="#">LinkedIn</a>
         <a href="#">GitHub</a>
-    </div>
-    <p>&copy; <span id="year">2024</span> Rosela. All rights reserved.</p>
-  </footer>
+      </div>
+      <p>&copy; {currentYear} Rosela. All rights reserved.</p>
+    </footer>
   );
 }
 

@@ -1,9 +1,17 @@
+import snake from './snake.png'
+import computer from './computer.jpg'
+import music from './music.jpg'
+import sudoku from './sudoku.jpg'
+import car from './car.jpg'
+import weather from './weather.png'
+
+
 const projects = [
   {
-    title: "Project 1",
+    title: "Snake Game",
     category: "web",
     image: {
-      src: "https://img.icons8.com/ios/50/flipboard.png",
+      src: snake,
       alt: "flipboard",
       
     },
@@ -12,10 +20,10 @@ const projects = [
     linkText: "Live Demo"
   },
   {
-    title: "Project 2",
+    title: "Management System",
     category: "web",
     image: {
-      src: "https://img.icons8.com/ios/50/flipboard.png",
+      src: computer,
       alt: "flipboard",
       
     },
@@ -24,10 +32,10 @@ const projects = [
     linkText: "Live Demo"
   },
   {
-    title: "Project 3",
+    title: "Music App",
     category: "design",
     image: {
-      src: "https://img.icons8.com/ios/50/flipboard.png",
+      src: music,
       alt: "flipboard",
       
     },
@@ -36,10 +44,10 @@ const projects = [
     linkText: "Live Demo"
   },
   {
-    title: "Project 4",
+    title: "Sudoku Game",
     category: "web",
     image: {
-      src: "https://img.icons8.com/ios/50/flipboard.png",
+      src: sudoku,
       alt: "flipboard",
       
     },
@@ -48,10 +56,10 @@ const projects = [
     linkText: "Live Demo"
   },
   {
-    title: "Project 5",
+    title: "Car Parking System",
     category: "web",
     image: {
-      src: "https://img.icons8.com/ios/50/flipboard.png",
+      src: car,
       alt: "flipboard",
       
     },
@@ -60,10 +68,10 @@ const projects = [
     linkText: "Live Demo"
   },
   {
-    title: "Project 6",
+    title: "Weather App",
     category: "web",
     image: {
-      src: "https://img.icons8.com/ios/50/flipboard.png",
+      src: weather,
       alt: "flipboard",
       
     },
